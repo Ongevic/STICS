@@ -1,30 +1,31 @@
-# Calibration Workflow Field Manual
+# Field Manual
 
-Welcome to the part of the project where we stop pretending anyone can keep the
-whole workflow in their head.
+This site documents the crop-model workflow stack in a form that is easier to
+navigate, edit, and trust than a pile of large notes.
 
-This book is the control tower for the calibration stack in
-`C:\Users\chich\Downloads\calib`. It is meant to answer four questions fast:
+It is meant to answer four questions quickly:
 
 1. What workflow exists?
 2. What script actually runs it?
-3. What files are inputs, outputs, or sacred artifacts?
-4. Where do things usually explode?
+3. Which files are inputs, outputs, or generated artifacts?
+4. Where do things usually break?
 
-## What lives here
+## What Lives Here
 
-- fast orientation pages
+- orientation pages
 - workflow entry points
 - reproducibility notes
-- links back to the longer raw guides in `/docs`
+- troubleshooting pages
+- links back to longer source guides
 
-## What does not live here
+## Where To Start
 
-- vague theory without a script path
-- undocumented magic
-- tribal knowledge that only works if one specific person is online
+- If you want the big picture, start with [Workflow Map](./workflow-map.md).
+- If you want the main docs section, go to [STICS](./workflows/stics.md).
+- If you want the source material behind the shorter pages, open
+  [Reference Shelf](./reference-shelf.md).
 
-## Working rule
+## Working Standard
 
 If a workflow matters, it should have:
 
@@ -35,5 +36,4 @@ If a workflow matters, it should have:
 - failure modes
 - one place that says which version is currently trusted
 
-That is the standard. We are raising the floor.
-
+That is the standard.

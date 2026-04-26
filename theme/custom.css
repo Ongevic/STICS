@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+    --content-max-width: 860px;
+    --sidebar-target-width: 300px;
+    --menu-bar-height: 54px;
+}
+
+.light, html:not(.js) {
+    --bg: #f7f0d4;
+    --fg: #1f2430;
+    --sidebar-bg: #fffdf4;
+    --sidebar-fg: #2b3028;
+    --sidebar-non-existant: #8c8c7a;
+    --sidebar-active: #9c6a00;
+    --sidebar-spacer: #e8db9f;
+    --scrollbar: #b79f57;
+    --icons: #8a7844;
+    --icons-hover: #1f2430;
+    --links: #8f5d00;
+    --inline-code-color: #6f4700;
+    --theme-popup-bg: #fffaf0;
+    --theme-popup-border: #d7ca8d;
+    --theme-hover: #f3e8b1;
+    --quote-bg: #fff7de;
+    --quote-border: #e6cf79;
+    --table-border-color: #e8dba7;
+    --table-header-bg: #f3e0a0;
+    --table-alternate-bg: #fff9e7;
+    --searchbar-border-color: #cfb86d;
+    --searchbar-bg: #fffdf4;
+    --searchbar-fg: #1f2430;
+    --searchbar-shadow-color: rgba(216, 155, 0, 0.18);
+    --searchresults-header-fg: #695e3a;
+    --searchresults-border-color: #d7ca8d;
+    --searchresults-li-bg: #fffaf0;
+    --search-mark-bg: #ffefb4;
+    --footnote-highlight: #f3e0a0;
+    --overlay-bg: rgba(73, 59, 11, 0.12);
+    --sidebar-header-border-color: #d89b00;
+}
+
+.rust {
+    --bg: #edf3e7;
+    --fg: #203127;
+    --sidebar-bg: #f9fcf6;
+    --sidebar-fg: #26372b;
+    --sidebar-non-existant: #73836e;
+    --sidebar-active: #426122;
+    --sidebar-spacer: #d8e5ca;
+    --scrollbar: #7f9670;
+    --icons: #6e806f;
+    --icons-hover: #203127;
+    --links: #4f7529;
+    --inline-code-color: #39581e;
+    --theme-popup-bg: #f9fcf6;
+    --theme-popup-border: #bfd1bc;
+    --theme-hover: #e2efce;
+    --quote-bg: #f4f9ee;
+    --quote-border: #bbd39e;
+    --table-border-color: #d6e2d2;
+    --table-header-bg: #dfead3;
+    --table-alternate-bg: #f7fbf3;
+    --searchbar-border-color: #9ab08a;
+    --searchbar-bg: #f9fcf6;
+    --searchbar-fg: #203127;
+    --searchbar-shadow-color: rgba(106, 143, 63, 0.16);
+    --searchresults-header-fg: #5e7065;
+    --searchresults-border-color: #bfd1bc;
+    --searchresults-li-bg: #eef6e7;
+    --search-mark-bg: #d9eab6;
+    --footnote-highlight: #dce9c2;
+    --overlay-bg: rgba(32, 49, 39, 0.12);
+    --sidebar-header-border-color: #6a8f3f;
+}
+
+.navy {
+    --bg: #11161d;
+    --fg: #edf2f6;
+    --sidebar-bg: #18202a;
+    --sidebar-fg: #d6dee7;
+    --sidebar-non-existant: #7f8b98;
+    --sidebar-active: #ffd978;
+    --sidebar-spacer: #283544;
+    --scrollbar: #8c9aaa;
+    --icons: #91a1b1;
+    --icons-hover: #ffffff;
+    --links: #f0c44f;
+    --inline-code-color: #ffd978;
+    --theme-popup-bg: #18202a;
+    --theme-popup-border: #304152;
+    --theme-hover: #222b36;
+    --quote-bg: #1d2733;
+    --quote-border: #2d3947;
+    --table-border-color: #2d3947;
+    --table-header-bg: #233040;
+    --table-alternate-bg: #151c24;
+    --searchbar-border-color: #485a6f;
+    --searchbar-bg: #18202a;
+    --searchbar-fg: #edf2f6;
+    --searchbar-shadow-color: rgba(240, 196, 79, 0.14);
+    --searchresults-header-fg: #a7b1bb;
+    --searchresults-border-color: #2d3947;
+    --searchresults-li-bg: #1d2733;
+    --search-mark-bg: #4e4112;
+    --footnote-highlight: #3a3117;
+    --overlay-bg: rgba(0, 0, 0, 0.35);
+    --sidebar-header-border-color: #f0c44f;
+}
+
+html,
+body {
+    font-family: "Manrope", system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu-title,
+.chapter li.part-title {
+    font-family: "Fraunces", Georgia, serif;
+}
+
+body {
+    background: var(--bg);
+}
+
+#mdbook-menu-bar {
+    backdrop-filter: blur(10px);
+    background: color-mix(in srgb, var(--sidebar-bg) 88%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--sidebar-header-border-color) 35%, transparent);
+}
+
+.menu-title {
+    font-weight: 700;
+}
+
+.sidebar {
+    border-right: 1px solid color-mix(in srgb, var(--sidebar-header-border-color) 20%, transparent);
+}
+
+.sidebar .chapter li a.active {
+    color: var(--sidebar-active);
+    font-weight: 700;
+}
+
+.content main {
+    line-height: 1.72;
+}
+
+.content h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+}
+
+.content h2 {
+    margin-top: 2.2rem;
+}
+
+.content blockquote,
+.content pre,
+.content table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.content pre {
+    border: 1px solid color-mix(in srgb, var(--table-border-color) 88%, transparent);
+}
+
+.content code {
+    border-radius: 0.35rem;
+}
+
+.theme-popup {
+    border-radius: 14px;
+}
+
+.theme-popup button.theme {
+    border-radius: 10px;
+    font-family: "Manrope", system-ui, sans-serif;
+    font-weight: 700;
+}

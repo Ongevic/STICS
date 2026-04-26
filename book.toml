@@ -5,7 +5,9 @@ language = "en"
 src = "src"
 
 [output.html]
-default-theme = "navy"
+default-theme = "light"
 preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/your-user/STICS"
 edit-url-template = "https://github.com/your-user/STICS/edit/main/{path}"
+additional-css = ["theme/custom.css"]
+additional-js = ["theme/custom.js"]
