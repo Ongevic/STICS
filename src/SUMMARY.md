@@ -1,0 +1,15 @@
+# Summary
+
+- [Field Manual](./introduction.md)
+- [Workflow Map](./workflow-map.md)
+- [Core Workflows](./workflows/overview.md)
+  - [STICS](./workflows/stics.md)
+    - [Architecture](./workflows/stics-architecture.md)
+    - [Files And Workspace](./workflows/stics-files.md)
+    - [Build And Run](./workflows/stics-pipeline.md)
+    - [Calibration And Validation](./workflows/stics-calibration.md)
+    - [Troubleshooting](./workflows/stics-troubleshooting.md)
+  - [WOFOST](./workflows/wofost.md)
+  - [APSIM](./workflows/apsim.md)
+  - [LORO Repro](./workflows/loro-repro.md)
+- [Reference Shelf](./reference-shelf.md)
